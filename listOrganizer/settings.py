@@ -92,7 +92,7 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-suredevelop-listorganiz-42zc0i21wmz.ws-eu111.gitpod.io",
-    ".herokuapp.com"
+    "https://.herokuapp.com"
 ]
 
 # Password validation
