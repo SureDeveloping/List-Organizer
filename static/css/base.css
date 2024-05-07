@@ -1,0 +1,15 @@
+/* Footer */
+.footer-icons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-text-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-icons {
+    max-height: 50px;
+}
