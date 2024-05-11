@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fyiv=556lz4u3wu8b2x#trp%*amw-x=+tiuxo^i1%7fy*jn7u0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-suredevelop-listorganiz-42zc0i21wmz.ws-eu111.gitpod.io',
                  '.herokuapp.com'
@@ -147,3 +147,6 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# login settings
+LOGIN_REDIRECT_URL = "/"
