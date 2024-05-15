@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # Added Apps
     'home',
     'accounts',
+    'lists'
     
     
 ]
