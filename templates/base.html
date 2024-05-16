@@ -45,6 +45,9 @@
                                 <a class="nav-link {% if request.path == '/sign_out/' %}active{% endif %}" href="{% url 'sign_out' %}">Sign out</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link {% if request.path == '/list_template/' %}active{% endif %}" href="{% url 'list_template' %}">My lists</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link">{{ user.username }} is signed in</a>
                             </li>
 
