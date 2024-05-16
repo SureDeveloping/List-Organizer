@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}My lists{% endblock %} 
+
+
+{% block content %} 
+<div class="container">
+    <h1 class="mt-5 mb-4">All my lists</h1>
+    <div class="row">
+        {% for list_template in list_templates %}
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ list_template.list_title }}</h5>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container mt-3 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <a href="{% url 'create_list' %}" class="btn btn-primary">Add list</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

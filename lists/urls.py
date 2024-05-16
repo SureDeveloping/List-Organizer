@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import ListTemplateCreateView
+from .views import CreateListView, ListsOverview
+
 
 urlpatterns = [
-    path('list_template/', ListTemplateCreateView.as_view(), name='list_template'),  
+    path('create_list/', CreateListView.as_view(), name='create_list'),  
+    path('overview_lists/', ListsOverview.as_view(), name='overview_lists'),
 ]
