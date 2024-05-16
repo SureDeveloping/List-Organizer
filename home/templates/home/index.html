@@ -15,11 +15,14 @@
 
         Get Startet and create an account, log in and work on your list!
         </p>
-        <div>
-            <a href="{% url 'sign_up' %}" class="btn btn-primary">Sign up here</a>
-            <a href="{% url 'sign_in' %}" class="btn btn-primary">Sign in here</a>
+        {% if not user.is_authenticated %}
+        <div class="container">
+            <div class="text-center my-4">
+                    <a href="{% url 'sign_up' %}" class="btn btn-primary">Sign up here</a>
+                    <a href="{% url 'sign_in' %}" class="btn btn-primary">Sign in here</a>
+            </div>       
         </div>
-
+        {% endif %}
     </section>
 </div>
 
