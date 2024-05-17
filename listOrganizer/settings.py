@@ -30,7 +30,8 @@ SECRET_KEY = 'django-insecure-fyiv=556lz4u3wu8b2x#trp%*amw-x=+tiuxo^i1%7fy*jn7u0
 DEBUG = False
 
 ALLOWED_HOSTS = ['8000-suredevelop-listorganiz-42zc0i21wmz.ws-eu111.gitpod.io',
-                 '.herokuapp.com'
+                 '.herokuapp.com',
+                 '8000-suredevelop-listorganiz-42zc0i21wmz.ws-eu114.gitpod.io'
 ]
 
 
@@ -102,7 +103,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-suredevelop-listorganiz-42zc0i21wmz.ws-eu111.gitpod.io",
-    "https://.herokuapp.com"
+    "https://.herokuapp.com",
+    "https://8000-suredevelop-listorganiz-42zc0i21wmz.ws-eu114.gitpod.io"
 ]
 
 # Password validation
