@@ -48,8 +48,7 @@ INSTALLED_APPS = [
     # Added Apps
     'home',
     'accounts',
-    'lists',
-    'crispy_forms'
+    'lists'
     
     
 ]
