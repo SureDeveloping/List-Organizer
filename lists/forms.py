@@ -4,5 +4,5 @@ from .models import ListTemplate
 class ListCreateForm(forms.ModelForm):
     class Meta:
         model = ListTemplate
-        fields = ['list_title']
+        fields = ['list_title', 'list_items']
 
